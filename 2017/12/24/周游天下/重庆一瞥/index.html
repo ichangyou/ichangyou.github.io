@@ -256,6 +256,13 @@
               <span class="post-meta-item-text">阅读次数：</span>
               <span id="busuanzi_value_page_pv"></span>
             </span>
+
+            
+            <% if (typeof(busuanzi) !== 'undefined') { %>
+              Pageviews: <%= busuanzi.pageviews %>
+            <% } else { %>
+              Pageviews: 0
+            <% } %>
             <div class="post-description">其实起初计划上个周末是要去成都的，因为只有周末两天时间，公司飞机去成都的时间点不好，如果去成都的话，时间会非常赶，而重庆还好，因为成都重庆距离足够近，然后就来重庆了。</div>
 
         </div>
@@ -539,12 +546,22 @@
 
 
 
-    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
+  
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
     <span id="busuanzi_container_site_pv">总访问量<span id="busuanzi_value_site_pv"></span>次</span>
     <span class="post-meta-divider">|</span>
     <span id="busuanzi_container_site_uv">总访客<span id="busuanzi_value_site_uv"></span>人</span>
     <span class="post-meta-divider">|</span>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-84RJMJCJ3V"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-84RJMJCJ3V');
+    </script>
 
 
 

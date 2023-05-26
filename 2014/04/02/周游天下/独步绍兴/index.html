@@ -250,6 +250,13 @@
               <span class="post-meta-item-text">阅读次数：</span>
               <span id="busuanzi_value_page_pv"></span>
             </span>
+
+            
+            <% if (typeof(busuanzi) !== 'undefined') { %>
+              Pageviews: <%= busuanzi.pageviews %>
+            <% } else { %>
+              Pageviews: 0
+            <% } %>
             <div class="post-description">本来说要21号去绍兴的，可是我这人总是办事欠打算。直到20号我才想起来要买火车票。待上网买的时候，已经发现没有我想要的出发与返回时间点了。无奈之下，只好选择28日的。</div>
 
         </div>
@@ -540,12 +547,22 @@
 
 
 
-    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
+  
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
     <span id="busuanzi_container_site_pv">总访问量<span id="busuanzi_value_site_pv"></span>次</span>
     <span class="post-meta-divider">|</span>
     <span id="busuanzi_container_site_uv">总访客<span id="busuanzi_value_site_uv"></span>人</span>
     <span class="post-meta-divider">|</span>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-84RJMJCJ3V"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-84RJMJCJ3V');
+    </script>
 
 
 
