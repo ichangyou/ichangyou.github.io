@@ -193,6 +193,13 @@
     </header>
 
     
+      <span id=“busuanzi_container_page_pv”>
+        <i class=“fa fa-eye”></i>
+        <span id=“busuanzi_value_page_pv”></span>
+      </span>
+    
+
+    
   <div class="back-to-top">
     <i class="fa fa-arrow-up"></i>
     <span>0%</span>
@@ -254,6 +261,20 @@
             </span>
 
           
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+
+            <span class="post-meta-item-icon">
+              <i class="fa fa-eye"></i>
+            </span>
+            <span class="post-meta-item-text">
+              <%= __('post_views') %>: <%= page.busuanzi?.page_pv || 0 %>
+            </span>
             <div class="post-description">上周末去了趟香港。去年十二月份的时候，去了趟深圳，和大学室友在深圳转了两天，其中第二天去了红树林风景区，那里和香港隔河相望，当时因为还没有办通行证，眼看着香港就那么近了却不能过去，那种感觉甚是难受啊。</div>
 
         </div>
@@ -560,6 +581,26 @@
 
 
         
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
 
 
 

@@ -229,6 +229,13 @@
     </header>
 
     
+      <span id=“busuanzi_container_page_pv”>
+        <i class=“fa fa-eye”></i>
+        <span id=“busuanzi_value_page_pv”></span>
+      </span>
+    
+
+    
   <div class="back-to-top">
     <i class="fa fa-arrow-up"></i>
     <span>0%</span>
@@ -290,6 +297,20 @@
             </span>
 
           
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+
+            <span class="post-meta-item-icon">
+              <i class="fa fa-eye"></i>
+            </span>
+            <span class="post-meta-item-text">
+              <%= __('post_views') %>: <%= page.busuanzi?.page_pv || 0 %>
+            </span>
             <div class="post-description">为期两天的黄山行至此结束，此刻我正坐在黄山站的大门前东边第一棵大树下，刚在路南边的某家餐馆点了两个菜一瓶啤酒一碗面，都没有吃完，感觉很是浪费，自责中拖着一瘸一拐的两腿艰难的来到了火车站旁。</div>
 
         </div>
@@ -641,6 +662,26 @@
 
 
         
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
 
 
 

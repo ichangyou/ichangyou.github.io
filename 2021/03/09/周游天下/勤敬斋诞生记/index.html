@@ -189,6 +189,13 @@
     </header>
 
     
+      <span id=“busuanzi_container_page_pv”>
+        <i class=“fa fa-eye”></i>
+        <span id=“busuanzi_value_page_pv”></span>
+      </span>
+    
+
+    
   <div class="back-to-top">
     <i class="fa fa-arrow-up"></i>
     <span>0%</span>
@@ -250,6 +257,20 @@
             </span>
 
           
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+
+            <span class="post-meta-item-icon">
+              <i class="fa fa-eye"></i>
+            </span>
+            <span class="post-meta-item-text">
+              <%= __('post_views') %>: <%= page.busuanzi?.page_pv || 0 %>
+            </span>
             <div class="post-description">前天，我的书斋名，“勤敬斋” 诞生了。前晚坐了一晚上火车，12 个小时的车程，情不自禁想睡觉，又睡不好，滋味真难受。经过两天时间，现在终于满血恢复了。接下来，我要继续好好读书、工作、写字了。</div>
 
         </div>
@@ -515,6 +536,26 @@
 
 
         
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
 
 
 
